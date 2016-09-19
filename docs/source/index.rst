@@ -17,7 +17,6 @@ CACIC is a Pioneer 3-AT, four wheeled robot built by Omron Adept MobileRobots, o
    :height: 500px
    :width: 500 px
    :scale: 50 %
-   :alt: There's a image
 
 CACIC has a lot of sensors and here you will learn how to work with them.
 
