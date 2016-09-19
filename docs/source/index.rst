@@ -13,7 +13,7 @@ Who I am?
 
 CACIC is a Pioneer 3-AT, four wheeled robot built by Omron Adept MobileRobots, owned by Computer Science Department at University of Brasilia, BR.
 
-.. image:: _images/p3at.jpg
+.. image:: /img/p3at.jpg
    :height: 500px
    :width: 500 px
    :scale: 50 %
