@@ -47,3 +47,4 @@ The main documentation for the site is organized into a couple sections:
    ros
    p2os
    OpenCV
+   howto
