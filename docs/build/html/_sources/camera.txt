@@ -17,12 +17,27 @@ Main Especs
 * Format: NTSC
 * Power Supply: 13 VDC
 
+Framegrabber
+------------
+Sensoray 311 with interface PC104+, manufactured by `Sensoray`_
+
+.. _Sensoray: Sensoray.com
+
+.. image:: /img/Sensoray_311_Framegrabber_PC104.jpg
+
+Linux 2.4.x Driver
+   Use built in 'bttv' module with parameter: card=73
+
+Linux 2.6.x Driver
+   Use v4l with parameter: card=73
+
 Linux Drivers
 ~~~~~~~~~~~~~
 
 For the Camera
 --------------
-   Video4Linux
+   Video4Linux / OpenCV
+
 
 For the Pan-Tilt-Zoom 
 ---------------------

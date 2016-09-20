@@ -36,6 +36,7 @@ The main documentation for the site is organized into a couple sections:
    laser
    sonar
    motors
+   computer
 
 .. _soft-docs:
 
