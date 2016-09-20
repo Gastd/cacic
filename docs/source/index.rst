@@ -30,7 +30,7 @@ The main documentation for the site is organized into a couple sections:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Hardware Documentation
+   :caption: Hardware
 
    camera
    laser
@@ -41,7 +41,7 @@ The main documentation for the site is organized into a couple sections:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Software Documentation
+   :caption: Software
 
    ros
    p2os
