@@ -93,4 +93,4 @@ IF YOU ARE TR00 FUCK HARD
 ~~~~~~~~~~~~~~~~~~~~~~~~~
     Maybe you want to use `it`_.
 
-.. _it: V4l2capture.c
+.. _it: https://raw.githubusercontent.com/Gastd/cacic/master/docs/source/sample_code/V4l2capture.c
