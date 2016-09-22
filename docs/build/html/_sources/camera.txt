@@ -82,10 +82,11 @@ Scramble image
 
     2. Using gscam and ROS?
         Set enviroment variable GSCAM_CONFIG="v4l2src ! video/x-raw-yuv, width=320, height=240 ! ffmpegcolorspace"
+.. TODO: change width and height
 
 More trouble?
 -------------
- Check `here`_.
+    Check `here`_.
 
 .. _here: http://robots.mobilerobots.com/wiki/Capturing_Video#Troubleshooting
 
@@ -93,4 +94,4 @@ IF YOU ARE TR00 FUCK HARD
 ~~~~~~~~~~~~~~~~~~~~~~~~~
     Maybe you want to use `it`_.
 
-.. _it: V4l2capture.c
+.. _it: https://raw.githubusercontent.com/Gastd/cacic/master/docs/source/sample_code/V4l2capture.c
