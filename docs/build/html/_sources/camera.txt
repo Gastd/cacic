@@ -20,7 +20,9 @@ Main Especs
 * Control Interface: Custom multiconnector with terminals S-VIDEO OUT, RS232 OUT and RS232 IN
 * Framegrabber: `Sensoray 311`_
 
-NOTE: There is wireless controller that came with camera, it work but is not used.
+.. note::
+    
+    There is wireless controller that came with camera, it work but is not used.
 
 .. _Sensoray 311: camera.html#framegrabber
 
@@ -30,7 +32,7 @@ Linux Drivers
 
 For the Camera
 --------------
-   The cameras's frame can be retrived with OpenCV using Video4Linux
+   The cameras's stream can be retrived with OpenCV using Video4Linux. Checkout this code.
 
 
 For the Pan-Tilt-Zoom 
@@ -91,4 +93,4 @@ IF YOU ARE TR00 FUCK HARD
 ~~~~~~~~~~~~~~~~~~~~~~~~~
     Maybe you want to use `it`_.
 
-.. _it: sample_code/V4l2capture.c
+.. _it: V4l2capture.c
