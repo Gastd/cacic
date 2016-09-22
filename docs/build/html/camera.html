@@ -84,16 +84,21 @@
                 <p class="caption"><span class="caption-text">Hardware</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Camera</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#main-especs">Main Especs</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#framegrabber">Framegrabber</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#main-especs">Main Especs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#linux-drivers">Linux Drivers</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#for-the-camera">For the Camera</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#for-the-pan-tilt-zoom">For the Pan-Tilt-Zoom</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#troublehooting">Troublehooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#framegrabber">Framegrabber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troublehooting">Troublehooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#blue-or-black-screen-when-retriving-frame-using-opencv">Blue or black screen when retriving frame using OpenCV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#blue-or-black-screen-when-retriving-frame-using-another-software">Blue or black screen when retriving frame using another software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scramble-image">Scramble image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#more-trouble">More trouble?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#if-you-are-tr00-fuck-hard">IF YOU ARE TR00 FUCK HARD</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="laser.html">Laser</a></li>
@@ -106,6 +111,7 @@
 <li class="toctree-l1"><a class="reference internal" href="ros.html">ROS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p2os.html">P2OS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OpenCV.html">OpenCV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How to install software</a></li>
 </ul>
 
             
@@ -163,9 +169,27 @@
 <li>Pan/Tilt speed: up to 90-degrees Pan and 70-degrees Tilt per second</li>
 <li>Format: NTSC</li>
 <li>Power Supply: 13 VDC</li>
+<li>Stream Interface: RCA-BNC Cable</li>
+<li>Control Interface: Custom multiconnector with terminals S-VIDEO OUT, RS232 OUT and RS232 IN</li>
+<li>Framegrabber: <a class="reference external" href="camera.html#framegrabber">Sensoray 311</a></li>
 </ul>
+<p>NOTE: There is wireless controller that came with camera, it work but is not used.</p>
+</div>
+<div class="section" id="linux-drivers">
+<h2>Linux Drivers<a class="headerlink" href="#linux-drivers" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="for-the-camera">
+<h3>For the Camera<a class="headerlink" href="#for-the-camera" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>The cameras&#8217;s frame can be retrived with OpenCV using Video4Linux</div></blockquote>
+</div>
+<div class="section" id="for-the-pan-tilt-zoom">
+<h3>For the Pan-Tilt-Zoom<a class="headerlink" href="#for-the-pan-tilt-zoom" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Camera&#8217;s PTZ can be controlled with <a class="reference external" href="p2os.tml">P2OS</a> package in <a class="reference external" href="ros.html">ROS</a></div></blockquote>
+</div>
+</div>
 <div class="section" id="framegrabber">
-<h3>Framegrabber<a class="headerlink" href="#framegrabber" title="Permalink to this headline">¶</a></h3>
+<h2>Framegrabber<a class="headerlink" href="#framegrabber" title="Permalink to this headline">¶</a></h2>
 <p>Sensoray 311 with interface PC104+, manufactured by <a class="reference external" href="Sensoray.com">Sensoray</a></p>
 <img alt="_images/Sensoray_311_Framegrabber_PC104.jpg" src="_images/Sensoray_311_Framegrabber_PC104.jpg" />
 <dl class="docutils">
@@ -175,22 +199,62 @@
 <dd>Use v4l with parameter: card=73</dd>
 </dl>
 </div>
-</div>
-<div class="section" id="linux-drivers">
-<h2>Linux Drivers<a class="headerlink" href="#linux-drivers" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="for-the-camera">
-<h3>For the Camera<a class="headerlink" href="#for-the-camera" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div>Video4Linux / OpenCV</div></blockquote>
-</div>
-<div class="section" id="for-the-pan-tilt-zoom">
-<h3>For the Pan-Tilt-Zoom<a class="headerlink" href="#for-the-pan-tilt-zoom" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div>P2OS</div></blockquote>
-</div>
-</div>
 <div class="section" id="troublehooting">
 <h2>Troublehooting<a class="headerlink" href="#troublehooting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="blue-or-black-screen-when-retriving-frame-using-opencv">
+<h3>Blue or black screen when retriving frame using OpenCV<a class="headerlink" href="#blue-or-black-screen-when-retriving-frame-using-opencv" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ol class="arabic">
+<li><dl class="first docutils">
+<dt>Check the camera&#8217;s LED</dt>
+<dd><p class="first last">The camera is switched off, start P2OS to switch the camera on.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><a class="reference external" href="http://robots.mobilerobots.com/wiki/Why_doesn%27t_my_camera_turn_on%3F">Check the power</a></dt>
+<dd><p class="first last">If the LED is off, maybe the power to the camera is switched off. Press the AUX 1 and AUX 2 buttons on the robot&#8217;s panel.</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="blue-or-black-screen-when-retriving-frame-using-another-software">
+<h3>Blue or black screen when retriving frame using another software<a class="headerlink" href="#blue-or-black-screen-when-retriving-frame-using-another-software" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Same for OpenCV, check the section above.</div></blockquote>
+</div>
+<div class="section" id="scramble-image">
+<h3>Scramble image<a class="headerlink" href="#scramble-image" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ol class="arabic">
+<li><dl class="first docutils">
+<dt>Switch v4l to retrieve the input with NTSC format</dt>
+<dd><p class="first">Open the terminal and try</p>
+<p class="last">$ v4l2-ctl -s ntsc</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Using gscam and ROS?</dt>
+<dd><p class="first last">Set enviroment variable GSCAM_CONFIG=&#8221;v4l2src ! video/x-raw-yuv, width=320, height=240 ! ffmpegcolorspace&#8221;</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="more-trouble">
+<h3>More trouble?<a class="headerlink" href="#more-trouble" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>Check <a class="reference external" href="http://robots.mobilerobots.com/wiki/Capturing_Video#Troubleshooting">here</a>.</div></blockquote>
+</div>
+</div>
+<div class="section" id="if-you-are-tr00-fuck-hard">
+<h2>IF YOU ARE TR00 FUCK HARD<a class="headerlink" href="#if-you-are-tr00-fuck-hard" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>Maybe you want to use <a class="reference external" href="sample_code/V4l2capture.c">it</a>.</div></blockquote>
 </div>
 </div>
 
