@@ -31,7 +31,7 @@
 
   
     <link rel="top" title="CACIC 1.0.0 documentation" href="index.html"/>
-        <link rel="next" title="ROS" href="ros.html"/>
+        <link rel="next" title="Computer" href="computer.html"/>
         <link rel="prev" title="Sonar" href="sonar.html"/> 
 
   
@@ -86,13 +86,19 @@
 <li class="toctree-l1"><a class="reference internal" href="camera.html">Camera</a></li>
 <li class="toctree-l1"><a class="reference internal" href="laser.html">Laser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sonar.html">Sonar</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Motors</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Motors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hot-wheels">[Hot] Wheels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#odometry">Odometry</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="computer.html">Computer</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Software</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="ros.html">ROS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p2os.html">P2OS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OpenCV.html">OpenCV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How To</a></li>
 </ul>
 
             
@@ -139,6 +145,20 @@
             
   <div class="section" id="motors">
 <h1>Motors<a class="headerlink" href="#motors" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div>Cacic is a four wheeled robot, but it has only two motors, one for each side. A drive belt transfer the rotation to the wheels.</div></blockquote>
+<img alt="_images/wheelsp3at.png" src="_images/wheelsp3at.png" />
+<div class="section" id="hot-wheels">
+<h2>[Hot] Wheels<a class="headerlink" href="#hot-wheels" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>Cacic has two types of wheels, off road and indoor. The first one is for outdoor enviroment and rough terrains</div></blockquote>
+<img alt="img/indoor.png" src="img/indoor.png" />
+</div>
+<div class="section" id="odometry">
+<h2>Odometry<a class="headerlink" href="#odometry" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><a class="reference external" href="https://en.wikipedia.org/wiki/Odometry">Odometry</a> is the use of data from motion sensors to estimate change in position over time. Cacic and others Pioneer-3AT has in its motors sensors that senses the rotation velocity then microcontroller? or p2os? integrates this data and estimates the robot&#8217;s <a class="reference external" href="https://en.wikipedia.org/wiki/Pose_(computer_vision)">pose</a> relative to a starting localtion.</div></blockquote>
+</div>
 </div>
 
 
@@ -148,7 +168,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ros.html" class="btn btn-neutral float-right" title="ROS" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="computer.html" class="btn btn-neutral float-right" title="Computer" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="sonar.html" class="btn btn-neutral" title="Sonar" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
