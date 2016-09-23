@@ -10,15 +10,15 @@ Cacic has a `PTZ Camera`_, Canon VC C50i
 Main Especs
 ~~~~~~~~~~~
 
-* Resolution: 640x480
-* Zoom: up to 26x optical
-* Pan/Tilt range: 200-degree pan range, 120-degree tilt range
-* Pan/Tilt speed: up to 90-degrees Pan and 70-degrees Tilt per second 
-* Format: NTSC
-* Power Supply: 13 VDC
-* Stream Interface: RCA-BNC Cable
-* Control Interface: Custom multiconnector with terminals S-VIDEO OUT, RS232 OUT and RS232 IN
-* Framegrabber: `Sensoray 311`_
+- Resolution: 640x480
+- Zoom: up to 26x optical
+- Pan/Tilt range: 200-degree pan range, 120-degree tilt range
+- Pan/Tilt speed: up to 90-degrees Pan and 70-degrees Tilt per second 
+- Format: NTSC
+- Power Supply: 13 VDC
+- Stream Interface: RCA-BNC Cable
+- Control Interface: Custom multiconnector with terminals S-VIDEO OUT, RS232 OUT and RS232 IN
+- Framegrabber: `Sensoray 311`_
 
 .. note::
     
@@ -82,7 +82,9 @@ Scramble image
 
     2. Using gscam and ROS?
         Set enviroment variable GSCAM_CONFIG="v4l2src ! video/x-raw-yuv, width=320, height=240 ! ffmpegcolorspace"
-.. TODO: change width and height
+
+.. todo:change width and height
+
 
 More trouble?
 -------------

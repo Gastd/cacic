@@ -147,7 +147,7 @@
             
   <div class="section" id="sonar">
 <h1>Sonar<a class="headerlink" href="#sonar" title="Permalink to this headline">¶</a></h1>
-<p>Cacic have two sonar arrays (front and rear), sonar or ultrasoud is a sensor that uses sound wave for detect object</p>
+<p>Cacic has two sonar arrays (front and rear), sonar or ultrasoud is a sensor that uses sound wave for detect obstacles and range information for collision avoidance.</p>
 <img alt="_images/pioneer3at_sonars.png" src="_images/pioneer3at_sonars.png" />
 <div class="section" id="especs">
 <h2>Especs<a class="headerlink" href="#especs" title="Permalink to this headline">¶</a></h2>
@@ -155,24 +155,34 @@
 <li>Range of view: 0.1 m ~ 5 m</li>
 <li>Aquisition rate: 25 Hz</li>
 </ul>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
 <p class="last">If the sonar doesn&#8217;t view anything in its cone of view, it will send to the software the max range.</p>
 </div>
 </div>
 <div class="section" id="geometry">
 <h2>Geometry<a class="headerlink" href="#geometry" title="Permalink to this headline">¶</a></h2>
-<p>There&#8217;re 16 sonars wich have a unique location as seen in the image below</p>
+<p>The position of each sonar is showed in the image below.</p>
 <img alt="_images/IeTo5.jpg" src="_images/IeTo5.jpg" />
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<ul class="last simple">
+<li>All these locations are fixed in the robot.</li>
+<li>There&#8217;re a URDF file, describing these locations to ROS. Please see the section <a class="reference external" href="urdf.html#urdf">description of the robot</a>.</li>
+</ul>
+</div>
 </div>
 <div class="section" id="sensitivity-adjustment">
 <h2>Sensitivity Adjustment<a class="headerlink" href="#sensitivity-adjustment" title="Permalink to this headline">¶</a></h2>
 <p>The driver electronics for each array is calibrated at the factory. However, you may adjust the array’s sensitivity and range to accommodate differing operating environments. The sonar gain control is on the underside of the sonar driver board, which is attached to the floor of each sonar module.</p>
+<p>Sonar sensitivity adjustment controls are accessible directly, although you may need to remove the Gripperto access the front sonar, if you have that accessory attached. For the front sonar, for instance, locate ahole near the front underside of the array through which you can see the cap of the sonar-gain adjustment  potentiometer. Using a small flat-blade screwdriver, turn the gain control counterclockwise to make the sonar less sensitive to external noise and false echoes.</p>
+<p>Low sonar-gain settings reduce the robot’s ability to see small objects. Under some circumstances, that is desirable. For instance, attenuate the sonar if you are operating in a noisy environment or on uneven or highly reflective floor, a heavy shag carpet, for example. If the sonar are too sensitive, they will “see” the carpet immediately ahead of the robot as an obstacle.</p>
+<p>Increase the sensitivity of the sonar by turning the gain-adjustment screw clockwise, making them more likely to see small objects or objects at a greater distance. For instance, increase the gain if youare operating in a relatively quiet and open environment with a smooth floor surface.</p>
 <blockquote>
 <div>By Mobile Robots©</div></blockquote>
 <div class="admonition hint">
 <p class="first admonition-title">Hint</p>
-<p class="last">See more in the manual.</p>
+<p class="last">See more in the <a class="reference external" href="https://github.com/Gastd/cacic/blob/master/manual_pioneer.pdf">manual</a>.</p>
 </div>
 </div>
 <div class="section" id="software">

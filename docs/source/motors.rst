@@ -7,13 +7,15 @@ Motors
 
 [Hot] Wheels
 ~~~~~~~~~~~~~
-    Cacic has two types of wheels, off road and indoor. The first one is for outdoor enviroment and rough terrains
 
-.. image:: /img/offroad.jpg
+    Cacic has two types of wheels, off road and indoor. The first one is for outdoor enviroment and rough terrains:
 
-    and the second is for flat surfaces/floors
+.. image:: /img/offroad.png
 
-.. image:: /img/indoor.png
+and the second is for flat surfaces/floors:
+
+.. image:: /img/indoor.jpg
+   :scale: 50 %
 
 Odometry
 ~~~~~~~~
