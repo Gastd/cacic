@@ -92,8 +92,8 @@ More trouble?
 
 .. _here: http://robots.mobilerobots.com/wiki/Capturing_Video#Troubleshooting
 
-IF YOU ARE TR00 FUCK HARD
-~~~~~~~~~~~~~~~~~~~~~~~~~
+IF YOU ARE TR00 FUCKING HARD
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Maybe you want to use `it`_.
 
 .. _it: https://raw.githubusercontent.com/Gastd/cacic/master/docs/source/sample_code/V4l2capture.c
