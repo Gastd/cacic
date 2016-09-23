@@ -85,14 +85,22 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="camera.html">Camera</a></li>
 <li class="toctree-l1"><a class="reference internal" href="laser.html">Laser</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sonar</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sonar</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#especs">Especs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#geometry">Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sensitivity-adjustment">Sensitivity Adjustment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#software">Software</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="motors.html">Motors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="computer.html">Computer</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Software</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="ros.html">ROS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p2os.html">P2OS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OpenCV.html">OpenCV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How To</a></li>
 </ul>
 
             
@@ -139,6 +147,38 @@
             
   <div class="section" id="sonar">
 <h1>Sonar<a class="headerlink" href="#sonar" title="Permalink to this headline">¶</a></h1>
+<p>Cacic have two sonar arrays (front and rear), sonar or ultrasoud is a sensor that uses sound wave for detect object</p>
+<img alt="_images/pioneer3at_sonars.png" src="_images/pioneer3at_sonars.png" />
+<div class="section" id="especs">
+<h2>Especs<a class="headerlink" href="#especs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Range of view: 0.1 m ~ 5 m</li>
+<li>Aquisition rate: 25 Hz</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If the sonar doesn&#8217;t view anything in its cone of view, it will send to the software the max range.</p>
+</div>
+</div>
+<div class="section" id="geometry">
+<h2>Geometry<a class="headerlink" href="#geometry" title="Permalink to this headline">¶</a></h2>
+<p>There&#8217;re 16 sonars wich have a unique location as seen in the image below</p>
+<img alt="_images/IeTo5.jpg" src="_images/IeTo5.jpg" />
+</div>
+<div class="section" id="sensitivity-adjustment">
+<h2>Sensitivity Adjustment<a class="headerlink" href="#sensitivity-adjustment" title="Permalink to this headline">¶</a></h2>
+<p>The driver electronics for each array is calibrated at the factory. However, you may adjust the array’s sensitivity and range to accommodate differing operating environments. The sonar gain control is on the underside of the sonar driver board, which is attached to the floor of each sonar module.</p>
+<blockquote>
+<div>By Mobile Robots©</div></blockquote>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">See more in the manual.</p>
+</div>
+</div>
+<div class="section" id="software">
+<h2>Software<a class="headerlink" href="#software" title="Permalink to this headline">¶</a></h2>
+<p>We use the P2OS to read the sonars readings.</p>
+</div>
 </div>
 
 
