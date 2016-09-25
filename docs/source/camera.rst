@@ -78,7 +78,10 @@ Scramble image
     1. Switch v4l to retrieve the input with NTSC format
         Open the terminal and try
 
-        $ v4l2-ctl -s ntsc
+        .. code-block:: bash
+
+            $ v4l2-ctl -s ntsc
+
 
     2. Using gscam and ROS?
         Set enviroment variable GSCAM_CONFIG="v4l2src ! video/x-raw-yuv, width=320, height=240 ! ffmpegcolorspace"
@@ -96,4 +99,4 @@ IF YOU ARE TR00 FUCKING HARD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Maybe you want to use `it`_.
 
-.. _it: https://raw.githubusercontent.com/Gastd/cacic/master/docs/source/sample_code/V4l2capture.c
+.. _it: https://raw.githubusercontent.com/Gastd/cacic/master/sample_code/V4l2capture.c
