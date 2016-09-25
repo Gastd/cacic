@@ -47,5 +47,6 @@ The main documentation is organized into a couple sections:
 
    ros
    p2os
+   sonar_viz
    OpenCV
    howto
