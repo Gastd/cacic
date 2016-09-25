@@ -5,8 +5,8 @@ Cacic has two sonar arrays (front and rear), sonar or ultrasoud is a sensor that
 
 .. image:: /img/pioneer3at_sonars.png
 
-Especs
-~~~~~~
+Sonar Especs
+~~~~~~~~~~~~
 
 - Range of view: 0.1 m ~ 5 m
 - Aquisition rate: 25 Hz
@@ -50,4 +50,7 @@ Increase the sensitivity of the sonar by turning the gain-adjustment screw clock
 Software
 ~~~~~~~~
 
-We use the P2OS to read the sonars readings.
+We use the `p2os`_ to read the sonars readings and the `sonar_viz`_ to transform the readings in standart data to better maniplation.
+
+.. _p2os: p2os.hml
+.. _sonar_viz: sonar_viz.html
