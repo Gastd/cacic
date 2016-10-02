@@ -7,6 +7,9 @@ Install ROS
 Use PTZ Camera
 ~~~~~~~~~~~~~~
 
+Teleoperate the robot
+~~~~~~~~~~~~~~~~~~~~~
+
 Use the Laser
 ~~~~~~~~~~~~~
 
