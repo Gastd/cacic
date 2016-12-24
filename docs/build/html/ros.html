@@ -94,7 +94,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">ROS</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#description-of-the-robot">Description of the Robot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#p2os">p2os</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#p2os-stack">p2os stack</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#hokuyo-node">hokuyo_node</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sonar-viz">sonar_viz</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#gscam">gscam</a></li>
@@ -156,15 +156,18 @@
             
   <div class="section" id="ros">
 <h1>ROS<a class="headerlink" href="#ros" title="Permalink to this headline">¶</a></h1>
-<p>The Robot Operating System (<a class="reference external" href="http://www.ros.org/">ROS</a>) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms.</p>
+<p>The Robot Operating System (<a class="reference external" href="http://www.ros.org/">ROS</a>) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms. ROS has chosen as CACIC&#8217;s framework because within it we can develop robotics software together with the community. Below are listed the packages that today are used and tested in the robot. To learn how to use ROS in the robot please <a class="reference external" href="howto.html">click here</a></p>
 <div class="section" id="description-of-the-robot">
 <h2>Description of the Robot<a class="headerlink" href="#description-of-the-robot" title="Permalink to this headline">¶</a></h2>
+<p>Custom package that contains the configuration files for CACIC, e.g. CAD, map, hardware configuration, hardware communication and navigation files. View the package in <a class="reference external" href="https://github.com/Gastd/cacic_description">github</a>.</p>
 </div>
-<div class="section" id="p2os">
-<h2>p2os<a class="headerlink" href="#p2os" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="p2os-stack">
+<h2>p2os stack<a class="headerlink" href="#p2os-stack" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="http://wiki.ros.org/p2os">p2os</a> is a stack, collection of <a class="reference external" href="http://wiki.ros.org/Packages">packages</a> that interface robot&#8217;s microcontroller with the ROS system.</p>
 </div>
 <div class="section" id="hokuyo-node">
 <h2>hokuyo_node<a class="headerlink" href="#hokuyo-node" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://wiki.ros.org/hokuyo_node">hokuyo_node</a> provide data stream from Hokuyo laser range finders.</p>
 </div>
 <div class="section" id="sonar-viz">
 <h2>sonar_viz<a class="headerlink" href="#sonar-viz" title="Permalink to this headline">¶</a></h2>

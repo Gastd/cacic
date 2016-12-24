@@ -39,7 +39,7 @@ For the Pan-Tilt-Zoom
 ---------------------
    Camera's PTZ can be controlled with `P2OS`_ package in `ROS`_
 
-.. _P2OS: p2os.tml
+.. _P2OS: p2os.html
 .. _ROS: ros.html
 
 Framegrabber
