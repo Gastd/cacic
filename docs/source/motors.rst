@@ -19,7 +19,7 @@ and the second is for flat surfaces/floors:
 
 Odometry
 ~~~~~~~~
-    `Odometry`_ is the use of data from motion sensors to estimate change in position over time. Cacic and others Pioneer-3AT has in its motors have sensors (position encoders) that senses the rotation velocity then microcontroller? or p2os? integrates this data and estimates the robot's `pose`_ relative to a starting localtion.
+    `Odometry`_ is the use of data from motion sensors to estimate change in position over time. Cacic and others Pioneer-3AT has in its motors sensors (position encoders) that senses the rotation velocity then the microcontroller? or p2os? integrates this data and estimates the robot's `pose`_ relative to a starting location.
 
 .. _Odometry: https://en.wikipedia.org/wiki/Odometry
 .. _pose: https://en.wikipedia.org/wiki/Pose_(computer_vision)
