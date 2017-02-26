@@ -4,6 +4,7 @@ Laser
 Cacic has Scanning Laser Range Finder, Hokuyo UTM-30LX
 
 .. image:: /img/hokuyo.jpg
+   :scale: 50 %
 
 Image credit: `RobotShop`_
 
@@ -13,16 +14,16 @@ Laser Especs
 ~~~~~~~~~~~~
 - Supply Voltage: 12VDC +- 10%
 - Supply Current: 1.0 MAX, 0.7 NORMAL
-- Detection Range: 0.1 ~ 30m
-- Measurement Resolution: 0.1~10m: σ < 10mm, 10~30: σ < 30mm
+- Detection Range: 0.1 ~ 30 m
+- Measurement Resolution: 0.1~10 m: σ < 10 mm, 10~30: σ < 30 mm
 - Scan Angle: 270°
 - Angular resolution: 0.25° (360°/1440)
-- Scan Speed: 25ms
+- Scan Speed: 25 ms
 - Interface: USB 2.0
 
 Driver
 ~~~~~~
-    The comunication with the device is provided by a `ROS node`_, go to `How to use the laser`_ for more details.
+    The communication with the device is provided by a `ROS node`_, go to `How to use the laser`_ for more details.
 
 .. _ROS node: http://wiki.ros.org/hokuyo_node
 
@@ -30,7 +31,7 @@ Driver
 
 .. note::
     
-    The `urg_node`_ is a newer driver and fully `REP 138`_ compliant, maybe in the future we will use it.
+    The `urg_node`_ is the only driver for Hokuyo Laser since ROS Kinetic and fully `REP 138`_ compliant, maybe in the future we will use it.
 
 
 .. _urg_node: http://wiki.ros.org/urg_node
@@ -39,6 +40,6 @@ Driver
 
 DC-DC Power Supply
 ~~~~~~~~~~~~~~~~~~
-    The Laser has a custom circuit board to supply voltage and current with highly precision. The project was made in Frienting? by a nordic gnome, you can view and modify the project in `whatever`_.
+    The Laser has a custom circuit board to supply voltage and current with high precision. The project was made in Frienting? by a Nordic gnome, you can view and modify the project in `whatever`_.
 
-.. _whatever: idontknow.html
+.. _whatever: idontknowyet.html

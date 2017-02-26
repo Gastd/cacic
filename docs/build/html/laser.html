@@ -81,10 +81,12 @@
           
             
             
-                <p class="caption"><span class="caption-text">Hardware</span></p>
+                <ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Hardware</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="camera.html">Camera</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Laser</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Laser</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#laser-especs">Laser Especs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#driver">Driver</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dc-dc-power-supply">DC-DC Power Supply</a></li>
@@ -93,11 +95,13 @@
 <li class="toctree-l1"><a class="reference internal" href="sonar.html">Sonar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="motors.html">Motors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="computer.html">Computer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="batteries.html">Batteries</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Software</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="ros.html">ROS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="p2os.html">P2OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p2os.html">p2os</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sonar_viz.html">sonar_viz</a></li>
 <li class="toctree-l1"><a class="reference internal" href="OpenCV.html">OpenCV</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto.html">How To</a></li>
 </ul>
@@ -147,34 +151,34 @@
   <div class="section" id="laser">
 <h1>Laser<a class="headerlink" href="#laser" title="Permalink to this headline">¶</a></h1>
 <p>Cacic has Scanning Laser Range Finder, Hokuyo UTM-30LX</p>
-<img alt="_images/hokuyo.jpg" src="_images/hokuyo.jpg" />
+<a class="reference internal image-reference" href="_images/hokuyo.jpg"><img alt="_images/hokuyo.jpg" src="_images/hokuyo.jpg" style="width: 450.0px; height: 450.0px;" /></a>
 <p>Image credit: <a class="reference external" href="http://www.robotshop.com/en/hokuyo-utm-03lx-laser-scanning-rangefinder.html">RobotShop</a></p>
 <div class="section" id="laser-especs">
 <h2>Laser Especs<a class="headerlink" href="#laser-especs" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Supply Voltage: 12VDC +- 10%</li>
 <li>Supply Current: 1.0 MAX, 0.7 NORMAL</li>
-<li>Detection Range: 0.1 ~ 30m</li>
-<li>Measurement Resolution: 0.1~10m: σ &lt; 10mm, 10~30: σ &lt; 30mm</li>
+<li>Detection Range: 0.1 ~ 30 m</li>
+<li>Measurement Resolution: 0.1~10 m: σ &lt; 10 mm, 10~30: σ &lt; 30 mm</li>
 <li>Scan Angle: 270°</li>
 <li>Angular resolution: 0.25° (360°/1440)</li>
-<li>Scan Speed: 25ms</li>
+<li>Scan Speed: 25 ms</li>
 <li>Interface: USB 2.0</li>
 </ul>
 </div>
 <div class="section" id="driver">
 <h2>Driver<a class="headerlink" href="#driver" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div>The comunication with the device is provided by a <a class="reference external" href="http://wiki.ros.org/hokuyo_node">ROS node</a>, go to <a class="reference external" href="howto.html#using-the-laser">How to use the laser</a> for more details.</div></blockquote>
+<div>The communication with the device is provided by a <a class="reference external" href="http://wiki.ros.org/hokuyo_node">ROS node</a>, go to <a class="reference external" href="howto.html#using-the-laser">How to use the laser</a> for more details.</div></blockquote>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <a class="reference external" href="http://wiki.ros.org/urg_node">urg_node</a> is a newer driver and fully <a class="reference external" href="http://www.ros.org/reps/rep-0138.html">REP 138</a> compliant, maybe in the future we will use it.</p>
+<p class="last">The <a class="reference external" href="http://wiki.ros.org/urg_node">urg_node</a> is the only driver for Hokuyo Laser since ROS Kinetic and fully <a class="reference external" href="http://www.ros.org/reps/rep-0138.html">REP 138</a> compliant, maybe in the future we will use it.</p>
 </div>
 </div>
 <div class="section" id="dc-dc-power-supply">
 <h2>DC-DC Power Supply<a class="headerlink" href="#dc-dc-power-supply" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div>The Laser has a custom circuit board to supply voltage and current with highly precision. The project was made in Frienting? by a nordic gnome, you can view and modify the project in <a class="reference external" href="idontknow.html">whatever</a>.</div></blockquote>
+<div>The Laser has a custom circuit board to supply voltage and current with high precision. The project was made in Frienting? by a Nordic gnome, you can view and modify the project in <a class="reference external" href="idontknowyet.html">whatever</a>.</div></blockquote>
 </div>
 </div>
 

@@ -30,6 +30,10 @@ hokuyo_node_ provide data stream from Hokuyo laser range finders.
 sonar_viz
 ~~~~~~~~~
 
+With this package is possible to view in rviz_ the sonar readings.
+
+.. _rviz: http://wiki.ros.org/rviz
+
 gscam
 ~~~~~
 
