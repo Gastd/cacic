@@ -10,8 +10,8 @@ Cacic contain three sealed lead-acid batteries accessible through a hinged and l
 
         By Mobile Robots©
 
-Batteries Especs
-~~~~~~~~~~~~~~~~
+Batteries Specs
+~~~~~~~~~~~~~~~
 - Lead-acid
 - Sealed
 - 12 VDC

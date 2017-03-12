@@ -5,8 +5,8 @@ Cacic has onboard computer where the sofware run.
 
 .. image:: /img/ebx12.jpg
 
-Computer Especs
-~~~~~~~~~~~~~~~
+Computer Specs
+~~~~~~~~~~~~~~
 
 - Pentium M 745 1.8 GHz
 - RAM 1 GB DRR2

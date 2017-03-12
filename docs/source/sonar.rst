@@ -5,8 +5,8 @@ Cacic has two sonar arrays (front and rear), sonar or ultrasoud is a sensor that
 
 .. image:: /img/pioneer3at_sonars.png
 
-Sonar Especs
-~~~~~~~~~~~~
+Sonar Specs
+~~~~~~~~~~~
 
 - Range of view: 0.1 m ~ 5 m
 - Aquisition rate: 25 Hz
