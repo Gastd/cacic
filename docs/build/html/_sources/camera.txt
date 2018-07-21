@@ -7,8 +7,8 @@ Cacic has a `PTZ Camera`_, Canon VC C50i
 
 .. image:: /img/canon_vc-c50i_med.jpg
 
-Camera Especs
-~~~~~~~~~~~~~
+Camera Specs
+~~~~~~~~~~~~
 
 - Resolution: 640x480
 - Zoom: up to 26x optical

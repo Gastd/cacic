@@ -10,8 +10,8 @@ Image credit: `RobotShop`_
 
 .. _RobotShop: http://www.robotshop.com/en/hokuyo-utm-03lx-laser-scanning-rangefinder.html
 
-Laser Especs
-~~~~~~~~~~~~
+Laser Specs
+~~~~~~~~~~~
 - Supply Voltage: 12VDC +- 10%
 - Supply Current: 1.0 MAX, 0.7 NORMAL
 - Detection Range: 0.1 ~ 30 m
