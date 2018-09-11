@@ -46,7 +46,7 @@ Framegrabber
 ~~~~~~~~~~~~
 Sensoray 311 with interface PC104+, manufactured by `Sensoray`_
 
-.. _Sensoray: Sensoray.com
+.. _Sensoray: http://sensoray.com/
 
 .. image:: /img/Sensoray_311_Framegrabber_PC104.jpg
 
@@ -84,7 +84,11 @@ Scramble image
 
 
     2. Using gscam and ROS?
-        Set enviroment variable GSCAM_CONFIG="v4l2src ! video/x-raw-yuv, width=320, height=240 ! ffmpegcolorspace"
+        Set enviroment variable GSCAM_CONFIG
+
+        .. code-block:: bash
+
+          $ GSCAM_CONFIG="v4l2src ! video/x-raw-yuv, width=320, height=240 ! ffmpegcolorspace"
 
 .. todo:change width and height
 

@@ -197,7 +197,7 @@
 </div>
 <div class="section" id="framegrabber">
 <h2>Framegrabber<a class="headerlink" href="#framegrabber" title="Permalink to this headline">¶</a></h2>
-<p>Sensoray 311 with interface PC104+, manufactured by <a class="reference external" href="Sensoray.com">Sensoray</a></p>
+<p>Sensoray 311 with interface PC104+, manufactured by <a class="reference external" href="http://sensoray.com/">Sensoray</a></p>
 <img alt="_images/Sensoray_311_Framegrabber_PC104.jpg" src="_images/Sensoray_311_Framegrabber_PC104.jpg" />
 <dl class="docutils">
 <dt>Linux 2.4.x Driver</dt>
@@ -239,7 +239,7 @@
 <li><dl class="first docutils">
 <dt>Switch v4l to retrieve the input with NTSC format</dt>
 <dd><p class="first">Open the terminal and try</p>
-<div class="last highlight-bash"><div class="highlight"><pre>$ v4l2-ctl -s ntsc
+<div class="last highlight-bash"><div class="highlight"><pre><span></span>$ v4l2-ctl -s ntsc
 </pre></div>
 </div>
 </dd>
@@ -247,7 +247,10 @@
 </li>
 <li><dl class="first docutils">
 <dt>Using gscam and ROS?</dt>
-<dd><p class="first last">Set enviroment variable GSCAM_CONFIG=&#8221;v4l2src ! video/x-raw-yuv, width=320, height=240 ! ffmpegcolorspace&#8221;</p>
+<dd><p class="first">Set enviroment variable GSCAM_CONFIG</p>
+<div class="last highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nv">GSCAM_CONFIG</span><span class="o">=</span><span class="s2">&quot;v4l2src ! video/x-raw-yuv, width=320, height=240 ! ffmpegcolorspace&quot;</span>
+</pre></div>
+</div>
 </dd>
 </dl>
 </li>
