@@ -46,7 +46,7 @@ Framegrabber
 ~~~~~~~~~~~~
 Sensoray 311 with interface PC104+, manufactured by `Sensoray`_
 
-.. _Sensoray: Sensoray.com
+.. _Sensoray: http://sensoray.com/
 
 .. image:: /img/Sensoray_311_Framegrabber_PC104.jpg
 
